@@ -1,0 +1,110 @@
+.login {
+    height: 76vh;
+    box-sizing: border-box;
+}
+.login-form {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    margin: 70px auto 100px auto;
+    width: 300px;
+    padding: 30px 50px;
+}
+.login-form h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #492996;
+    margin-bottom: 15px;
+}
+.login-form p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #292929;
+}
+.login-form .log-social {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.login-form .log-social .form-log-wrap {
+    background: linear-gradient(269.44deg, #5B0093 -18.81%, #B70068 99.9%);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 61px;
+    padding: 2px;
+    display: flex;
+    width: 47%;
+    margin: 15px 0;
+    text-align: center;
+}
+.login-form .log-social .form-log-wrap:nth-last-child(1) {
+    margin-left: auto;
+}
+.login-form .log-social a.form-log {
+    box-sizing: border-box;
+    border-radius: 61px;
+    background: #fff;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+    width: 100%;
+}
+.login-form h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #292929;
+}
+.login-form form input{
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #797979;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 10px 0;
+}
+.login-form form input.btn-log{
+    background: linear-gradient(269.43deg, #5B0093 -18.81%, #B70068 99.9%);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 58px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 40px;
+}
+.login-form a.forgot-pass{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #292929;
+    margin: 20px auto 0 auto;
+}
+.login-form p.p-last{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #292929;
+    margin-top: 20px;
+}
