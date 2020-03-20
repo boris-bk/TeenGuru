@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #f5f3fa;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 80px;
+  background-color: #f5f3fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  margin-left: 100px;
+}
+header .header-biz {
+  font-weight: bold;
+  color: #492996;
+}
+header .header-teen-guru {
+  font-weight: bold;
+  color: #f2386e;
+}
+header .logos {
+  margin: auto;
+}
+header .logos img {
+  max-width: 320px;
+}
+header .log-reg {
+  margin-right: 100px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+header a.header-log {
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 20px;
+}
+header .header-reg-wrap {
+  background: linear-gradient(269.44deg, #5B0093 -18.81%, #B70068 99.9%);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 61px;
+  padding: 2px;
+  display: flex;
+}
+header a.header-reg {
+  box-sizing: border-box;
+  border-radius: 61px;
+  background: #fff;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 12px 25px;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  background: #00092B;
+  position: relative;
+}
+footer h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 100px;
+}
+footer .footer-biz {
+  font-weight: bold;
+  color: #492996;
+}
+footer .footer-teen-guru {
+  font-weight: bold;
+  color: #f2386e;
+}
+footer .links {
+  margin: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+footer .links a {
+  margin: auto 25px;
+  color: #FFFFFF;
+}
+footer .social {
+  margin-right: 100px;
+}
+footer .social svg {
+  margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 1140px) {
+
+}
+@media only screen and (max-width: 980px) {
+
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 740px) {
+
+}
+@media only screen and (max-width: 550px) {
+
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (max-width: 375px) {
+
+}
+
+/*бургер*/
+
+.menu-icon-wrapper {
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  width: 20px;
+  height: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  content: '';
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #000;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  content: '';
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #000;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.gradient-text {
+  font-family: 'Rubik One', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(269.44deg, #5B0093 -18.81%, #B70068 99.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+}
