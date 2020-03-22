@@ -1,0 +1,328 @@
+.home-content {
+    font-family: Montserrat;
+    font-style: normal;
+}
+.home-wel {
+    background-image: url("../img/space.png");
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+}
+.home-wel:before {
+    content: '';
+    display: block;
+}
+.home-wel:first-child:before {
+    margin-top: 40%;
+}
+.home-wel-rocket {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/rocket.png");
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+}
+.home-wel-rocket .home-wel-rocket-content {
+    margin: auto 100px;
+}
+.home-wel-rocket .home-wel-rocket-content h1 {
+    width: 60%;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 110.19%;
+    color: #492996;
+    margin-bottom: 20px;
+}
+.home-wel-rocket .home-wel-rocket-content p {
+    width: 70%;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142.19%;
+    color: #2B2B2B;
+    margin-bottom: 50px;
+}
+a.enroll-course {
+    background: linear-gradient(269.62deg, #5B0093 -18.81%, #B70068 99.9%);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 58px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 25px;
+}
+.launch-your-startup {
+    padding: 70px 120px;
+}
+.launch-your-startup h1{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 50px;
+}
+.launch-your-startup-wrap{
+    display: flex;
+}
+.launch-your-startup-hard, .launch-your-startup-soft {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+}
+.hard-skills-head, .soft-skills-head {
+    padding-left: 60px;
+    height: 150px;
+}
+.hard-skills-head svg, .soft-skills-head svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hard-skills-head h1, .soft-skills-head h1 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #F2386E;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.soft-skills-head h1 {
+    color: #492996;
+}
+.hard-skills-head p, .soft-skills-head p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #292929;
+    margin-bottom: 20px;
+}
+.hard-skills-head-modules, .soft-skills-head-modules {
+    border-left: 2px solid #E8EAEF;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+.hard-skills-head-modules a, .soft-skills-head-modules a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2386E;
+    margin: 35px 0;
+    display: block;
+    position: relative;
+}
+.soft-skills-head-modules a {
+    color: #492996;
+}
+.modules-arrow {
+    position: absolute;
+    top: -8px;
+    left: -58px;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hard-skills-head-modules ul, .soft-skills-head-modules ul {
+    display: none;
+}
+.hard-skills-head-modules ul li, .soft-skills-head-modules ul li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+.launch-your-startup a.enroll-course {
+    margin: 40px auto 0 auto;
+    display: table;
+}
+.experts {
+    background: #EDEAF5;
+    padding: 70px 200px;
+}
+.experts h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #492996;
+    margin-bottom: 70px;
+}
+.experts-slider {
+    position: relative;
+    margin-bottom: 50px;
+}
+.arrow-back, .arrow-next {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-back {
+    top: 22%;
+    left: -100px;
+}
+.arrow-next {
+    top: 22%;
+    right: -100px;
+}
+.experts-slides {
+    display: flex;
+}
+.experts-slide {
+    width: 20%;
+    margin: 0 auto;
+}
+.experts-slide img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.experts-slide h1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #492996;
+    margin-bottom: 20px;
+}
+.experts-slide p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #797979;
+    margin-bottom: 10px;
+}
+.experts-slide h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #292929;
+}
+.slider-dots {
+    display: block;
+    margin: auto;
+}
+.cosmonaut-wrap {
+    background: linear-gradient(269.62deg, #04074a -18.81%, #2a246d 99.9%), #04074a;
+}
+.cosmonaut {
+    padding: 80px 0;
+    background-image: url("../img/cosmonaut.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 100%;
+}
+.cosmonaut-content {
+    margin: 0 100px 0 auto;
+    width: 60%;
+}
+.cosmonaut-content h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F2386E;
+}
+.cosmonaut-content ul {
+
+}
+.cosmonaut-content ul li {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180.9%;
+    color: #FFFFFF;
+}
+.cosmonaut-content ul li span {
+    color: #c0a6ff;
+}
+.teenguru-business-academy {
+    padding: 80px 120px;
+}
+.teenguru-business-academy h1{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #492996;
+    margin-bottom: 50px;
+}
+.achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.achievement {
+    margin: 0 auto;
+    width: 150px;
+}
+.achievement svg {
+    margin: 20px auto;
+    display: block;
+}
+.achievement h1 {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #F2386E;
+    margin-bottom: 10px;
+}
+.achievement h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #292929;
+}
+.teenguru-business-academy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 -40px;
+}
+.teenguru-business-academy-text ul {
+    width: 45%;
+    margin: 40px;
+}
+.teenguru-business-academy-text ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #292929;
+    position: relative;
+}
+.teenguru-business-academy-text ul li svg {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+.teenguru-business-academy a.enroll-course {
+    margin: 40px auto 0 auto;
+    display: table;
+}

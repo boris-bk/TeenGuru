@@ -105,7 +105,7 @@ header .header-reg-wrap {
 header a.header-reg {
   box-sizing: border-box;
   border-radius: 61px;
-  background: #fff;
+  background: #f5f3fa;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
   padding: 12px 25px;
 }
