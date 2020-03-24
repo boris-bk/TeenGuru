@@ -198,8 +198,9 @@ a.enroll-course {
     margin: 0 auto;
 }
 .experts-slide img {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 200px;
+    display: block;
+    margin: 0  auto 20px auto;
 }
 .experts-slide h1 {
     font-weight: bold;
@@ -326,3 +327,106 @@ a.enroll-course {
     margin: 40px auto 0 auto;
     display: table;
 }
+.result-course {
+    background-image: url("../img/space-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 100px;
+}
+.result-course h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F2386E;
+}
+.result-course img {
+    display: block;
+    margin: auto;
+}
+.video-invitation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+}
+.video-invitation-text {
+    width: 45%;
+    margin-right: 40px;
+}
+.video-invitation-text h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #492996;
+    margin-bottom: 40px;
+}
+.video-invitation-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #292929;
+    width: 70%;
+}
+.video-invitation-player {
+    position: relative;
+}
+.play-video {
+    background: #F2386E;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 43%;
+    left: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graduates {
+    background: #EDEAF5;
+    padding: 70px 200px;
+}
+.graduates h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #492996;
+    margin-bottom: 70px;
+}
+.graduates-slides {
+    display: flex;
+}
+.graduates-slide {
+    width: 20%;
+    margin: 0 auto;
+}
+.graduates-slide img {
+    width: 200px;
+    display: block;
+    margin: 0  auto 20px auto;
+}
+.graduates-slide h1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #492996;
+    margin-bottom: 20px;
+}
+.graduates-slide p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #797979;
+    margin-bottom: 10px;
+}
+.graduates-slide h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #292929;
+}
+
