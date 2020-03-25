@@ -57,6 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 100px;
 }
 header h1 {
   font-family: Roboto;
@@ -65,7 +66,6 @@ header h1 {
   font-size: 20px;
   line-height: 23px;
   color: #000;
-  margin-left: 100px;
 }
 header .header-biz {
   font-weight: bold;
@@ -82,7 +82,6 @@ header .logos img {
   max-width: 320px;
 }
 header .log-reg {
-  margin-right: 100px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -156,49 +155,17 @@ footer .social svg {
   margin: 10px;
 }
 
-
-
-@media only screen and (max-width: 1300px) {
-
-}
-@media only screen and (max-width: 1200px) {
-
-}
-@media only screen and (max-width: 1140px) {
-
-}
-@media only screen and (max-width: 980px) {
-
-}
-@media only screen and (max-width: 800px) {
-
-}
-@media only screen and (max-width: 740px) {
-
-}
-@media only screen and (max-width: 550px) {
-
-}
-@media only screen and (max-width: 425px) {
-
-}
-@media only screen and (max-width: 375px) {
-
-}
-
 /*бургер*/
 
 .menu-icon-wrapper {
   position: absolute;
   right: 40px;
-  top: 25px;
-  width: 20px;
   height: 30px;
+  width: 30px;
   display: none;
   justify-content: center;
   align-items: center;
 }
-
 .menu-icon {
   position: relative;
   width: 20px;
@@ -206,7 +173,6 @@ footer .social svg {
   border-radius: 2px;
   background-color: #000;
 }
-
 .menu-icon::before {
   position: absolute;
   left: 0;
@@ -218,7 +184,6 @@ footer .social svg {
   background-color: #000;
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
-
 .menu-icon::after {
   position: absolute;
   left: 0;
@@ -230,17 +195,14 @@ footer .social svg {
   background-color: #000;
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
-
 .menu-icon.menu-icon-active {
   background-color: transparent;
 }
-
 .menu-icon.menu-icon-active::before {
   transform: rotate(45deg);
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
-
 .menu-icon.menu-icon-active::after {
   transform: rotate(-45deg);
   top: 0;
@@ -248,11 +210,100 @@ footer .social svg {
 }
 
 
+@media only screen and (max-width: 1300px) {
+  header {
+    padding: 0 50px;
+  }
+  footer h1 {
+    margin-left: 50px;
+  }
+  footer .social {
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 0 20px;
+  }
+  footer h1 {
+    margin-left: 20px;
+  }
+  footer .social {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  header .logos {
+    display: none;
+  }
+  header .log-reg {
+    display: none;
+  }
+  .menu-icon-wrapper {
+    display: flex;
+  }
+  header h1 {
+    position: absolute;
+    left: 40px;
+  }
+  footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    padding: 40px 0 60px 0;
+  }
+  footer h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px 0;
+  }
+  footer .links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+  footer .social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menu-icon-wrapper {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header {
+    justify-content: flex-start;
+  }
+  header h1 {
+    position: absolute;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header h1 {
+    font-size: 16px;
+  }
+}
+
+
 .hidden {
   display: none !important;
 }
 .show {
-  display: block !important;
+  display: flex !important;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
