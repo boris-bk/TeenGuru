@@ -32,18 +32,20 @@
     background-position: left;
     display: flex;
 }
-.home-wel-rocket .home-wel-rocket-content {
+.home-wel-rocket-content {
     margin: auto 100px;
 }
-.home-wel-rocket .home-wel-rocket-content h1 {
+.home-wel-rocket-content h1 {
     width: 60%;
     font-weight: 800;
     font-size: 44px;
     line-height: 110.19%;
     color: #492996;
     margin-bottom: 20px;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+    white -1px 1px 0, white 1px -1px 0;
 }
-.home-wel-rocket .home-wel-rocket-content p {
+.home-wel-rocket-content p {
     width: 70%;
     font-weight: normal;
     font-size: 20px;
@@ -240,14 +242,15 @@ a.enroll-course {
     background-position-y: 100%;
 }
 .cosmonaut-content {
-    margin: 0 100px 0 auto;
-    width: 60%;
+    margin: 0 100px 0 40%;
+    width: auto;
 }
 .cosmonaut-content h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 44px;
     color: #F2386E;
+    margin-bottom: 40px;
 }
 .cosmonaut-content ul {
 
@@ -275,16 +278,16 @@ a.enroll-course {
 .achievements {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 100px;
 }
 .achievement {
     margin: 0 auto;
     width: 150px;
 }
-.achievement svg {
+.achievement img {
     margin: 20px auto;
     display: block;
+    width: 80px;
 }
 .achievement h1 {
     font-weight: 800;
@@ -340,9 +343,12 @@ a.enroll-course {
     line-height: 44px;
     color: #F2386E;
 }
-.result-course img {
+.result-course img.space-2 {
     display: block;
     margin: auto;
+}
+.result-course img.space-2-mob {
+    display: none;
 }
 .video-invitation {
     display: flex;
@@ -370,6 +376,10 @@ a.enroll-course {
 }
 .video-invitation-player {
     position: relative;
+    width: 50%;
+}
+.video-invitation-player video {
+    width: 100%;
 }
 .play-video {
     background: #F2386E;
@@ -378,7 +388,7 @@ a.enroll-course {
     height: 50px;
     position: absolute;
     top: 43%;
-    left: -25px;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,6 +404,13 @@ a.enroll-course {
     text-align: center;
     color: #492996;
     margin-bottom: 70px;
+}
+.graduates-slider {
+    position: relative;
+
+}
+.graduates-arrow {
+   display: none;
 }
 .graduates-slides {
     display: flex;
@@ -428,5 +445,280 @@ a.enroll-course {
     line-height: 20px;
     text-align: center;
     color: #292929;
+}
+@media only screen and (max-width: 1400px) {
+    .experts-slide:nth-last-child(1), .graduates-slide:nth-last-child(1) {
+        display: none;
+    }
+    .graduates-arrow {
+        display: flex;
+    }
+    .experts-slide, .graduates-slide {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .cosmonaut {
+        background-size: 50%;
+        background-position: bottom;
+    }
+    .cosmonaut-content {
+        margin: auto auto 30% auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cosmonaut-content h1 {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cosmonaut-content ul li {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .home-wel-rocket .home-wel-rocket-content {
+        margin: auto 50px;
+    }
+    .launch-your-startup {
+        padding: 70px 50px;
+    }
+    .experts, .graduates {
+        padding: 70px 100px;
+    }
+    .arrow-back {
+        left: -70px;
+    }
+    .arrow-next {
+        right: -70px;
+    }
+    .teenguru-business-academy {
+        padding: 70px 50px;
+    }
+    .achievements {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .video-invitation {
+        padding: 70px 50px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .home-wel-rocket .home-wel-rocket-content {
+        margin: auto 20px;
+    }
+    .launch-your-startup {
+        padding: 50px 20px;
+    }
+    .experts, .graduates {
+        padding: 50px 70px;
+    }
+    .arrow-back {
+        left: -50px;
+    }
+    .arrow-next {
+        right: -50px;
+    }
+    .teenguru-business-academy {
+        padding: 50px 20px;
+    }
+    .achievement {
+        width: 30%;
+    }
+    .video-invitation {
+        padding: 50px 20px;
+        flex-wrap: wrap;
+    }
+    .video-invitation-text {
+        width: 90%;
+        margin: 0 auto 40px auto;
+        text-align: center;
+    }
+    .video-invitation-text h1 {
+        font-size: 28px;
+    }
+    .video-invitation-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .video-invitation-player {
+        width: 80%;
+    }
+    .play-video {
+        left: 45%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .home-wel {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+    }
+    .home-wel-rocket {
+        background-image: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-wel-rocket-content h1 {
+        width: 80%;
+        font-size: 34px;
+        text-align: center;
+        color: #FFFFFF !important;
+        text-shadow: none !important;
+        margin: 20px auto;
+    }
+    .home-wel-rocket-content p {
+        width: 80%;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF !important;
+        margin: 20px auto;
+    }
+    .home-wel-rocket-content a {
+        margin: auto;
+        display: table;
+    }
+    .arrow-back {
+        left: -20px;
+    }
+    .arrow-next {
+        right: -20px;
+    }
+    .experts-slide:nth-last-child(2), .graduates-slide:nth-last-child(2) {
+        display: none;
+    }
+    .experts-slide, .graduates-slide {
+        width: 40%;
+    }
+    .result-course {
+        padding: 50px 0;
+    }
+    .result-course h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+    .result-course img.space-2 {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .launch-your-startup h1 {
+        font-size: 28px;
+    }
+    .launch-your-startup-wrap {
+        flex-wrap: wrap;
+    }
+    .launch-your-startup-hard, .launch-your-startup-soft {
+        width: 95%;
+    }
+    .hard-skills-head, .soft-skills-head {
+        height: auto;
+    }
+    .hard-skills-head h1, .soft-skills-head h1 {
+        font-size: 22px;
+    }
+    .hard-skills-head p, .soft-skills-head p {
+        font-size: 16px;
+    }
+    .hard-skills-head-modules a, .soft-skills-head-modules a {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .experts h1, .graduates h1 {
+        font-size: 28px;
+    }
+    .experts-slide:nth-last-child(3), .graduates-slide:nth-last-child(3) {
+        display: none;
+    }
+    .experts-slide, .graduates-slide {
+        width: 80%;
+    }
+    .cosmonaut {
+        padding: 80px 20px;
+    }
+    .cosmonaut {
+        background-size: 100%;
+    }
+    .cosmonaut-content {
+        margin: auto auto 70% auto;
+    }
+    .teenguru-business-academy-text {
+        flex-wrap: wrap;
+    }
+    .teenguru-business-academy-text ul {
+        width: 90%;
+        margin: 0;
+    }
+    .teenguru-business-academy-text ul:nth-child(1) {
+        margin-top: 40px;
+    }
+    .result-course img.space-2 {
+        display: none;
+    }
+    .result-course img.space-2-mob {
+        display: block;
+        margin: 20px auto;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home-wel:first-child:before {
+        margin-top: 60%;
+    }
+    .teenguru-business-academy {
+        padding: 50px 0;
+    }
+    .teenguru-business-academy h1 {
+        font-size: 28px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .achievement img {
+        width: 50px;
+    }
+    .achievement h1 {
+        font-size: 28px;
+    }
+    .achievement h3 {
+        font-size: 13px;
+    }
+    .teenguru-business-academy-text ul {
+        margin: 0 30px;
+    }
+    .teenguru-business-academy-text ul li {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .home-wel:first-child:before {
+        margin-top: 70%;
+    }
+    .video-invitation-player {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .home-wel:first-child:before {
+        margin-top: 90%;
+    }
+    .result-course img.space-2-mob {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home-wel:first-child:before {
+        margin-top: 100%;
+    }
+    .experts, .graduates {
+        padding: 30px 50px;
+    }
+}
+@media only screen and (max-width: 375px) {
+
 }
 
