@@ -16,7 +16,7 @@
 
     <body>
     <header class="header-home-page">
-        <h1><span class="header-biz">Бизнес </span>Академия <span class="header-teen-guru">TeenGuru</span></h1>
+        <h1 class="home-acad"><span class="header-biz">Бизнес </span>Академия <span class="header-teen-guru">TeenGuru</span></h1>
         <div class="logos">
             <img src="img/logo.png" alt="">
         </div>
@@ -26,8 +26,16 @@
                 <a href="#" class="header-reg"><span class="gradient-text">Регистрация</span></a>
             </div>
         </div>
+        <div class="menu-icon-wrapper">
+            <div class="menu-icon"></div>
+        </div>
     </header>
         <div class="login">
+            <a href="#" class="log-back">
+                <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.28054 11.0981L10.0981 19.7918C10.3869 20.0765 10.8518 20.0726 11.1366 19.7827C11.4212 19.4928 11.4175 19.0267 11.1286 18.7418L2.83591 10.5655L11.0257 2.26788C11.311 1.97872 11.3089 1.51287 11.0207 1.22719C10.8761 1.08399 10.6874 1.01324 10.4992 1.01463C10.3115 1.01601 10.1244 1.08904 9.9819 1.23336L1.27401 10.0559C1.1366 10.1948 1.06018 10.3831 1.0614 10.5786C1.06263 10.7741 1.14162 10.961 1.28054 11.0981Z" fill="#492996" stroke="#492996"/>
+                </svg>
+            </a>
             <div class="login-form">
                 <h1>Вход</h1>
                 <p>Через социальные сети</p>
@@ -149,7 +157,7 @@
         <script>
             document.querySelector('.menu-icon-wrapper').onclick = function() {
                 document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-                document.querySelector('.log-log').classList.toggle('show');
+                document.querySelector('.log-reg').classList.toggle('show');
                 document.querySelector('.home-acad').classList.toggle('hidden');
             }
         </script>
