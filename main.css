@@ -108,8 +108,42 @@ header a.header-reg {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
   padding: 12px 25px;
 }
+header .user {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+header .user a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #292929;
+}
+header .user a svg {
+  margin-right: 15px;
+}
 
-
+.way {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #292929;
+  background: #EDEAF5;
+  padding: 15px 100px;
+}
+.way a {
+  color: #292929;
+}
+.way a:nth-last-child(1) {
+  color: #5B0093;
+}
 
 footer {
   width: 100%;
@@ -214,6 +248,9 @@ footer .social svg {
   header {
     padding: 0 50px;
   }
+  .way {
+    padding: 15px 50px;
+  }
   footer h1 {
     margin-left: 50px;
   }
@@ -224,6 +261,9 @@ footer .social svg {
 @media only screen and (max-width: 1200px) {
   header {
     padding: 0 20px;
+  }
+  .way {
+    padding: 15px 20px;
   }
   footer h1 {
     margin-left: 20px;
@@ -239,12 +279,18 @@ footer .social svg {
   header .log-reg {
     display: none;
   }
+  header .user {
+    display: none;
+  }
   .menu-icon-wrapper {
     display: flex;
   }
   header h1 {
     position: absolute;
     left: 40px;
+  }
+  .way {
+    padding: 15px 40px;
   }
   footer {
     flex-wrap: wrap;
@@ -290,6 +336,9 @@ footer .social svg {
   header h1 {
     position: absolute;
     left: 20px;
+  }
+  .way {
+    padding: 15px 20px;
   }
 }
 @media only screen and (max-width: 375px) {

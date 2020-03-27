@@ -1,0 +1,157 @@
+.modules-page {
+    font-family: Montserrat;
+    font-style: normal;
+    padding: 80px 100px;
+}
+.modules-page-hard-skills, .modules-page-soft-skills {
+    margin-bottom: 80px;
+}
+.modules-page-hard-skills h1, .modules-page-soft-skills h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #F2386E;
+    margin-bottom: 20px;
+}
+.modules-page-soft-skills h1 {
+    color: #492996;
+}
+.modules-page-hard-skills p, .modules-page-soft-skills p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #292929;
+    width: 50%;
+    display: block;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+.modules-page-slider {
+    position: relative;
+}
+.modules-page-slides {
+    display: flex;
+    margin-bottom: 40px;
+}
+.modules-page-slides a {
+    margin: 0 auto;
+}
+.modules-page-slide {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+.modules-page-slide-head {
+    display: flex;
+    margin-bottom: 15px;
+}
+.modules-page-slide-head h1 {
+    width: 70%;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto 0 0;
+    text-align: left;
+}
+.modules-page-slide p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+.modules-page-arrow {
+    display: none;
+}
+.arrow-back, .arrow-next {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-back {
+    top: 36%;
+    left: -50px;
+}
+.arrow-next {
+    top: 36%;
+    right: -50px;
+}
+.slider-dots {
+    display: none;
+    margin: auto;
+}
+@media only screen and (max-width: 1500px) {
+    .arrow-back, .arrow-next {
+        display: flex;
+    }
+    .modules-page-slides a:nth-last-child(1) {
+        display: none;
+    }
+    .slider-dots {
+        display: block;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .modules-page {
+        padding: 40px 100px;
+    }
+    .modules-page-slides a:nth-last-child(2) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .modules-page {
+        padding: 40px 80px;
+    }
+    .modules-page-hard-skills h1, .modules-page-soft-skills h1 {
+        font-size: 28px;
+    }
+    .modules-page-hard-skills p, .modules-page-soft-skills p {
+        font-size: 16px;
+        width: auto;
+    }
+    .modules-page-slide-head h1 {
+        font-size: 16px;
+    }
+    .modules-page-slide p {
+        font-size: 12px;
+    }
+    .modules-page-slides a:nth-last-child(3) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .modules-page {
+        padding: 20px 50px;
+    }
+    .modules-page-slides a:nth-last-child(4) {
+        display: none;
+    }
+    .arrow-back {
+        top: 36%;
+        left: -10px;
+    }
+    .arrow-next {
+        top: 36%;
+        right: -10px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .arrow-back {
+        top: 36%;
+        left: -35px;
+    }
+    .arrow-next {
+        top: 36%;
+        right: -35px;
+    }
+}

@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     background-image: url("../img/rocket.png");
-    background-size: 80% 100%;
+    background-size: 80% 101%;
     background-repeat: no-repeat;
     background-position: left;
     display: flex;
@@ -117,6 +117,9 @@ a.enroll-course {
     margin-left: 20px;
     padding-left: 40px;
 }
+.modules-arrow-show {
+    position: relative;
+}
 .hard-skills-head-modules a, .soft-skills-head-modules a {
     font-weight: bold;
     font-size: 16px;
@@ -142,6 +145,11 @@ a.enroll-course {
     justify-content: center;
     align-items: center;
 }
+.modules-arrow-reverse {
+    transform: rotate(180deg);
+    box-shadow: none;
+    box-shadow: -1px -3px 8px rgba(0, 0, 0, 0.15);
+}
 .hard-skills-head-modules ul, .soft-skills-head-modules ul {
     display: none;
 }
@@ -152,6 +160,9 @@ a.enroll-course {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
+}
+.modules-arrow-ul-show {
+    display: block !important;
 }
 .launch-your-startup a.enroll-course {
     margin: 40px auto 0 auto;
@@ -407,7 +418,7 @@ a.enroll-course {
 }
 .graduates-slider {
     position: relative;
-
+    margin-bottom: 40px;
 }
 .graduates-arrow {
    display: none;
@@ -446,6 +457,9 @@ a.enroll-course {
     text-align: center;
     color: #292929;
 }
+.graduates svg {
+    display: none;
+}
 @media only screen and (max-width: 1400px) {
     .experts-slide:nth-last-child(1), .graduates-slide:nth-last-child(1) {
         display: none;
@@ -455,6 +469,9 @@ a.enroll-course {
     }
     .experts-slide, .graduates-slide {
         width: 30%;
+    }
+    .graduates svg {
+        display: table;
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -474,7 +491,6 @@ a.enroll-course {
         width: 100%;
         text-align: center;
     }
-
     .cosmonaut-content ul li {
         font-size: 16px;
     }
@@ -717,8 +733,5 @@ a.enroll-course {
     .experts, .graduates {
         padding: 30px 50px;
     }
-}
-@media only screen and (max-width: 375px) {
-
 }
 
