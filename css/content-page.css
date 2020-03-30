@@ -84,6 +84,7 @@ a.li-active {
     font-size: 16px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
 }
 .slide-page-wrap {
     display: flex;
@@ -160,49 +161,7 @@ a.slide-next svg path:active {
     height: 100%;
     z-index: 9;
 }
-.max-size {
-    z-index: 9;
-    width: 20px;
-    position:absolute;
-    top: 20px;
-    right: 20px;
-}
-.max-size-svg {
-    display: block;
-}
-.min-size {
-    display: none;
-    z-index: 9;
-    width: 50px;
-    position:absolute;
-    top: 20px;
-    right: 20px;
-}
-.slide-num {
-    width: 100%;
-    margin: auto auto 15px auto;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 9;
-    box-sizing: border-box;
-    position:absolute;
-    bottom:0;
-}
-.slide-num h6 {
-    display: inline-flex;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.slide-num h6 span {
-    display: inline-flex;
-    margin-right: 5px;
-    margin-left: 5px;
-}
+
 .content-page-slide h1 {
     margin-top: 30px;
     font-weight: bold;
@@ -392,13 +351,4 @@ a.slide-next svg path:active {
     .content-btns a.content-btn {
         width: 100%;
     }
-}
-@media only screen and (max-width: 550px) {
-
-}
-@media only screen and (max-width: 425px) {
-
-}
-@media only screen and (max-width: 375px) {
-
 }

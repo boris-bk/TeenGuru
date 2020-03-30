@@ -1,0 +1,43 @@
+.max-size {
+    z-index: 9;
+    width: 20px;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+.max-size-svg {
+    display: block;
+}
+.min-size {
+    display: none;
+    z-index: 9;
+    width: 50px;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+.slide-num {
+    width: 100%;
+    margin: auto auto 15px auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    box-sizing: border-box;
+    position:absolute;
+    bottom:0;
+}
+.slide-num h6 {
+    display: inline-flex;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.slide-num h6 span {
+    display: inline-flex;
+    margin-right: 5px;
+    margin-left: 5px;
+}
