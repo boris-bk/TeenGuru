@@ -100,9 +100,13 @@ a.li-active {
 }
 .slide-page-wrap-100 {
     width: 100%;
+    margin: 70px 2% 0 2%;
     padding-left: 100px;
     padding-right: 100px;
     position: unset;
+}
+.slide-page-45 {
+    height: 45vw !important;
 }
 .h1-nav-hidden {
     font-weight: bold;
