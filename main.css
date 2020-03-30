@@ -242,7 +242,9 @@ footer .social svg {
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
-
+.background-icon {
+  background: #fff;
+}
 
 @media only screen and (max-width: 1300px) {
   header {

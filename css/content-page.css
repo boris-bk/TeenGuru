@@ -1,16 +1,15 @@
 .content-page {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     min-height: 900px;
-    overflow: auto;
     display: flex;
     font-family: Montserrat;
     font-style: normal;
 }
 .content-page-nav {
-    height: 60%;
+    height: auto;
     width: 25%;
-    margin: 30px 0 0 5%;
+    margin: 30px auto auto 5%;
     background: rgba(0, 0, 0, 0.03);
     border-radius: 0 10px 10px 0;
     padding: 15px 5px;
@@ -28,12 +27,19 @@
     left: 5% !important;
 }
 .nav-hidden {
+    display: none !important;
+}
+.menu-icon-wrapper-nav-show {
     display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 18%;
+    left: 5%;
 }
 .content-page-nav-module {
     padding: 15px;
     background: #FFFFFF;
-    border: 2px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 5px;
@@ -83,16 +89,27 @@ a.li-active {
     display: flex;
     justify-content: center;
     min-height: 634px;
-    width: 60%;
+    width: 55%;
     margin: 70px 0 0 2%;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 0;
+    position: absolute;
+    right: 100px;
 }
 .slide-page-wrap-100 {
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
+    position: unset;
+}
+.h1-nav-hidden {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #F2386E !important;
+    margin: 30px 0;
+    display: none;
 }
 .slide-page-wrap a.slide-back {
     position: absolute;
@@ -117,7 +134,7 @@ a.slide-next svg path:active {
     fill: #492996;
 }
 .slide-page {
-    min-height: 500px;
+    height: 30vw;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.7);
@@ -287,4 +304,101 @@ a.slide-next svg path:active {
     transform: rotate(-45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .slide-page-wrap {
+        right: 50px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .slide-page-wrap {
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .content-page-nav {
+        display: none;
+    }
+    .slide-page-wrap {
+        width: 96%;
+        position: unset;
+        margin: 70px 2% 0 2%;
+    }
+    .slide-page {
+        height: 50vw;
+    }
+    .slide-page-full-screen {
+        top: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .slide-page-wrap a.slide-next {
+        right: -8%;
+    }
+    .slide-page-wrap a.slide-back {
+        left: -8%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .content-page {
+        flex-wrap: wrap;
+    }
+    .content-page-nav {
+        display: block;
+    }
+    .h1-nav-hidden {
+        display: block;
+    }
+    .content-page-nav {
+        width: 100%;
+        margin: 0 auto auto auto;
+        background: transparent;
+    }
+    .content-page-nav .h1-nav-show {
+        display: none;
+    }
+    .slide-page-wrap {
+        width: 100%;
+        position: unset;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-page-nav {
+        padding: 15px 15px;
+    }
+    .slide-page-wrap a.slide-next {
+        display: none;
+    }
+    .slide-page-wrap a.slide-back {
+        display: none;
+    }
+    .content-btns {
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .content-btns {
+        flex-wrap: wrap;
+    }
+    .content-btn-wrap {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .content-btns a.content-btn {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px) {
+
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (max-width: 375px) {
+
 }
