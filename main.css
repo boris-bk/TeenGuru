@@ -363,5 +363,5 @@ footer .social svg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0B2349;
-  display: table;
+  display: flex;
 }
