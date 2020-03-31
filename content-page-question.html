@@ -8,12 +8,26 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="css/content-page.css">
-    <link rel="stylesheet" href="css/content-page-video.css">
+    <link rel="stylesheet" href="css/content-page-question.css">
     <link rel="stylesheet" href="main.css">
     <meta name="theme-color" content="#fafafa">
   </head>
   <body>
     <div class="modal-fon-off"></div>
+    <div class="modal-fon-question-off">
+      <div class="form-question">
+<!--        <h2 class="form-question-h2-final">Ваш вопрос отправлен!</h2>-->
+        <h2>Задайте вопрос по теме эксперту:<br>“1.<span class="span-question"> Притча про торговца обувью.</span>”</h2>
+        <div class="menu-icon-wrapper menu-icon-wrapper-question-hidden">
+          <div class="menu-icon menu-icon-active"></div>
+        </div>
+        <form action="">
+          <textarea name="" id="" cols="" rows="4" placeholder="Вопрос.."></textarea>
+          <hr>
+          <input type="submit" value="Отправить" class="btn-quest">
+        </form>
+      </div>
+    </div>
     <header class="header-home-page">
       <h1 class="home-acad"><span class="header-biz">Бизнес </span>Академия <span class="header-teen-guru">TeenGuru</span></h1>
       <div class="logos">
@@ -68,14 +82,22 @@
           <h1>1. Притча про торговца обувью - показывает как влияет взгляд на ситуацию.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="content-btns">
-            <div class="content-btn-wrap">
-              <a href="#" class="content-btn"><span class="gradient-text">Вопрос эксперту</span></a>
+            <div class="content-btn-wrap question-expert">
+              <a href="#" class="content-btn">
+                <span class="gradient-text">
+                  Вопрос эксперту
+                </span>
+              </a>
             </div>
             <div class="content-btn-wrap">
-              <a href="#" class="content-btn"><span class="gradient-text">Поддержка
-              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.6523 0.0702672L0.446092 7.68509C-0.176 7.93176 -0.138313 8.84002 0.502055 9.03238L5.38255 10.4987L7.20396 16.3789C7.39422 16.9931 8.15925 17.1793 8.60211 16.7192L11.1255 14.0979L16.0765 17.7953C16.6824 18.2478 17.5453 17.9117 17.6991 17.1632L20.9782 1.21269C21.1388 0.431391 20.3833 -0.219555 19.6523 0.0702672ZM17.2443 3.61008L8.32317 11.6365C8.23425 11.7165 8.17765 11.8272 8.16442 11.9473L7.82094 15.0538C7.80973 15.1551 7.67039 15.1685 7.64064 15.0711L6.22749 10.4383C6.16277 10.2262 6.24716 9.99636 6.43263 9.87934L16.9676 3.23164C17.2099 3.07865 17.4579 3.41797 17.2443 3.61008Z" fill="#6C2C8D"/>
-              </svg></span></a>
+              <a href="#" class="content-btn">
+                <span class="gradient-text">
+                  Поддержка
+                  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.6523 0.0702672L0.446092 7.68509C-0.176 7.93176 -0.138313 8.84002 0.502055 9.03238L5.38255 10.4987L7.20396 16.3789C7.39422 16.9931 8.15925 17.1793 8.60211 16.7192L11.1255 14.0979L16.0765 17.7953C16.6824 18.2478 17.5453 17.9117 17.6991 17.1632L20.9782 1.21269C21.1388 0.431391 20.3833 -0.219555 19.6523 0.0702672ZM17.2443 3.61008L8.32317 11.6365C8.23425 11.7165 8.17765 11.8272 8.16442 11.9473L7.82094 15.0538C7.80973 15.1551 7.67039 15.1685 7.64064 15.0711L6.22749 10.4383C6.16277 10.2262 6.24716 9.99636 6.43263 9.87934L16.9676 3.23164C17.2099 3.07865 17.4579 3.41797 17.2443 3.61008Z" fill="#6C2C8D"/>
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -227,6 +249,12 @@
         document.querySelector('.slide-page-wrap').classList.toggle('slide-page-wrap-100');
         document.querySelector('.slide-page').classList.toggle('slide-page-45');
         document.querySelector('.menu-icon-wrapper-nav-show').classList.toggle('show');
+      }
+      document.querySelector('.question-expert').onclick = function() {
+        document.querySelector('.modal-fon-question-off').classList.toggle('modal-fon-question-on');
+      }
+      document.querySelector('.menu-icon-wrapper-question-hidden').onclick = function() {
+        document.querySelector('.modal-fon-question-off').classList.toggle('modal-fon-question-on');
       }
     </script>
   </body>
