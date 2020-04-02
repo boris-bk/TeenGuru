@@ -24,6 +24,13 @@
         <form action="">
           <textarea name="" id="" cols="" rows="4" placeholder="Вопрос.."></textarea>
           <hr>
+          <div class="content-btn-wrap btn-quest-close">
+            <a href="#" class="content-btn">
+                <span class="gradient-text">
+                  Закрыть
+                </span>
+            </a>
+          </div>
           <input type="submit" value="Отправить" class="btn-quest">
         </form>
       </div>
@@ -254,6 +261,9 @@
         document.querySelector('.modal-fon-question-off').classList.toggle('modal-fon-question-on');
       }
       document.querySelector('.menu-icon-wrapper-question-hidden').onclick = function() {
+        document.querySelector('.modal-fon-question-off').classList.toggle('modal-fon-question-on');
+      }
+      document.querySelector('.btn-quest-close').onclick = function() {
         document.querySelector('.modal-fon-question-off').classList.toggle('modal-fon-question-on');
       }
     </script>

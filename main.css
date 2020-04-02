@@ -359,8 +359,6 @@ footer .social svg {
 
 @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 .gradient-text {
-  font-family: 'Rubik One', sans-serif;
-  text-transform: uppercase;
   background: linear-gradient(269.44deg, #5B0093 -18.81%, #B70068 99.9%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
