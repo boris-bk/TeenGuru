@@ -113,9 +113,6 @@
     .test-result {
         min-height: calc(100vh - 305px);
     }
-    .test-result form input.btn-ans {
-        width: 50%;
-    }
     .result-test-wrap {
         width: 60vw;
     }
@@ -127,7 +124,7 @@
     .test-result h2 {
         font-size: 16px;
     }
-    .test-result form p {
+    .test-result p {
         font-size: 16px;
     }
 }
