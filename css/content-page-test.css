@@ -1,0 +1,15 @@
+a.content-page-test {
+    color: #000 !important;
+}
+.content-btn-test {
+    background: linear-gradient(269.62deg, #5B0093 -18.81%, #B70068 99.9%);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 58px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    line-height: 24px;
+    padding: 15px 25px;
+}
