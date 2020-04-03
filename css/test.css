@@ -1,0 +1,147 @@
+.test {
+    min-height: calc(100vh - 205px);
+    box-sizing: border-box;
+    padding: 10vh 20vw;
+}
+.test-back {
+    position: absolute;
+    left: 100px;
+    top: 170px;
+}
+.test h1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 50px;
+}
+.test h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2386E;
+    margin-bottom: 20px;
+}
+.test form {
+    margin: 0 30px 40px 30px;
+}
+.test form p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140.19%;
+    color: #292929;
+}
+.test form p:nth-last-child(2) {
+    margin-bottom: 30px;
+}
+.test form p input {
+    margin-right: 10px;
+}
+.radio input {
+    display: none;
+}
+.radio span {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    border: 1px solid #000;
+    top: 1px;
+    left: -5px;
+}
+.radio input:checked + span {
+    background: #ffffff;
+    border: 1px solid #F2386E;
+}
+.radio input:checked + span::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background: #F2386E;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.test form input.btn-ans {
+    background: linear-gradient(269.43deg, #5B0093 -18.81%, #B70068 99.9%);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 58px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.num-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num-questions a {
+    margin: 0 5px;
+}
+.num-questions a svg {
+    margin: 0 10px;
+}
+.num-questions a span {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.16em;
+    color: rgba(0, 0, 0, 0.2);
+}
+.num-questions a span.active {
+    color: #F2386E;
+}
+.num-questions a span.passed {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .test {
+        padding: 10vh 10vw;
+    }
+    .test-back {
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .test {
+        padding: 10vh 5vw;
+    }
+    .test-back {
+        left: 5vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .test {
+        min-height: calc(100vh - 305px);
+    }
+    .test form input.btn-ans {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .test h1 {
+        font-size: 18px;
+    }
+    .test h2 {
+        font-size: 16px;
+    }
+    .test form p {
+        font-size: 16px;
+    }
+}

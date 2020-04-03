@@ -30,6 +30,8 @@ body {
   margin: 0;
   height: 100%;
   box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
 }
 ol, ul {
   list-style: none;
@@ -61,11 +63,12 @@ header {
 }
 header h1 {
   font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   color: #000;
+  position: absolute;
+  left: 100px;
 }
 header .header-biz {
   font-weight: bold;
@@ -82,13 +85,13 @@ header .logos img {
   max-width: 320px;
 }
 header .log-reg {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 100px;
 }
 header a.header-log {
   color: rgba(0, 0, 0, 0.8);
@@ -112,13 +115,13 @@ header .user {
   display: flex;
   align-items: center;
   justify-content: right;
+  position: absolute;
+  right: 100px;
 }
 header .user a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -129,8 +132,6 @@ header .user a svg {
 }
 
 .way {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -155,7 +156,6 @@ footer {
 }
 footer h1 {
   font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
@@ -172,8 +172,6 @@ footer .footer-teen-guru {
 }
 footer .links {
   margin: auto;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -250,6 +248,15 @@ footer .social svg {
   header {
     padding: 0 50px;
   }
+  header h1 {
+    left: 50px;
+  }
+  header .log-reg {
+    right: 50px;
+  }
+  header .user {
+    right: 50px;
+  }
   .way {
     padding: 15px 50px;
   }
@@ -263,6 +270,15 @@ footer .social svg {
 @media only screen and (max-width: 1200px) {
   header {
     padding: 0 20px;
+  }
+  header h1 {
+    left: 20px;
+  }
+  header .log-reg {
+    right: 20px;
+  }
+  header .user {
+    right: 20px;
   }
   .way {
     padding: 15px 20px;
@@ -283,6 +299,7 @@ footer .social svg {
   }
   header .user {
     display: none;
+    position: static;
   }
   .menu-icon-wrapper {
     display: flex;
