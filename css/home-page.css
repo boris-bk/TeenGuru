@@ -128,6 +128,7 @@ a.enroll-course {
     margin: 35px 0;
     display: block;
     position: relative;
+    width: fit-content;
 }
 .soft-skills-head-modules a {
     color: #492996;
@@ -145,13 +146,8 @@ a.enroll-course {
     justify-content: center;
     align-items: center;
 }
-.modules-arrow-reverse {
+.svg-reverse {
     transform: rotate(180deg);
-    box-shadow: none;
-    box-shadow: -1px -3px 8px rgba(0, 0, 0, 0.15);
-}
-.hard-skills-head-modules ul, .soft-skills-head-modules ul {
-    display: none;
 }
 .hard-skills-head-modules ul li, .soft-skills-head-modules ul li {
     font-family: Roboto;
