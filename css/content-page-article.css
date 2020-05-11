@@ -5,6 +5,7 @@
     background: transparent;
     border: none;
     height: auto !important;
+    margin-top: 70px;
 }
 .article h1 {
     font-weight: 800;
@@ -58,7 +59,8 @@
     line-height: 228px;
     color: #F2386E;
     text-shadow: -7px -5px 0px #492996;
-    width: 15%;
+    width: 25%;
+
 }
 .article-list h2 {
     font-weight: bold;
@@ -69,14 +71,18 @@
     position: relative;
     bottom: 40px;
     width: 70%;
+    word-wrap: break-word;
 }
 .rev {
     flex-direction: row-reverse;
     flex-wrap: wrap;
 }
+.rev h1 {
+    text-align: end;
+}
 .rev h2 {
     text-align: end;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 .rev p {
     width: 100%;
@@ -153,8 +159,105 @@
     width: 100px;
     height: 100px;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1060px) {
+    .article h1 {
+        font-size: 32px;
+        width: 100%;
+    }
+    .article-list h1 {
+        font-size: 160px;
+        width: 25%;
+    }
+    .article-list h2 {
+        font-size: 26px;
+        bottom: 50px;
+    }
+    .article p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 960px) {
     .article {
-        margin-top: 70px;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .article h1 {
+        font-size: 28px;
+    }
+    .article-list h1 {
+        font-size: 140px;
+    }
+    .article-list h2 {
+        font-size: 24px;
+        bottom: 60px;
+        line-height: 25px;
+    }
+    .article p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .article img {
+        width: 60%;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .article-list-book-heading {
+        width: auto;
+    }
+    .article-list-book-heading h2 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .article-list-book-heading h3 {
+        font-size: 22px;
+    }
+    .quote {
+        padding: 70px 20px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .article h1 {
+        font-size: 24px;
+    }
+    .article p {
+        font-size: 14px;
+    }
+    .article-list h1 {
+        font-size: 120px;
+    }
+    .article-list h2 {
+        font-size: 20px;
+        bottom: 65px;
+        width: 65%;
+    }
+    .article-list-book-heading h2 {
+        font-size: 20px;
+    }
+    .article-list-book-heading h3 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .article h1 {
+        font-size: 24px;
+    }
+    .article-list h1 {
+        font-size: 100px;
+    }
+    .article-list h2 {
+        font-size: 18px;
+        bottom: 65px;
+        width: 65%;
+    }
+    .article-list-book-heading h2 {
+        font-size: 18px;
+    }
+    .article-list-book-heading h3 {
+        font-size: 15px;
+    }
+    .article p {
+        font-size: 14px;
     }
 }

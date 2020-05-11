@@ -255,12 +255,16 @@
       document.querySelector('.menu-icon-wrapper-nav').onclick = function(){
         document.querySelector('.content-page-nav').classList.toggle('nav-hidden');
         document.querySelector('.slide-page-wrap').classList.toggle('slide-page-wrap-100');
-        document.querySelector('.menu-icon-wrapper-nav-show').classList.toggle('show');
+        document.querySelector('.menu-icon-wrapper-nav-show').classList.remove('hidden');
+        document.querySelector('.menu-icon-wrapper-nav-show').classList.add('show');
+        document.querySelector('.content-page-nav').classList.remove('nav-show');
       }
       document.querySelector('.menu-icon-wrapper-nav-show').onclick = function(){
-        document.querySelector('.content-page-nav').classList.toggle('nav-hidden');
+        document.querySelector('.content-page-nav').classList.remove('nav-hidden');
+        document.querySelector('.content-page-nav').classList.add('nav-show');
         document.querySelector('.slide-page-wrap').classList.toggle('slide-page-wrap-100');
-        document.querySelector('.menu-icon-wrapper-nav-show').classList.toggle('show');
+        document.querySelector('.menu-icon-wrapper-nav-show').classList.remove('show');
+        document.querySelector('.menu-icon-wrapper-nav-show').classList.add('hidden');
       }
     </script>
   </body>
