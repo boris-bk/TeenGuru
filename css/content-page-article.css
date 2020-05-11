@@ -38,22 +38,19 @@
 .article p span {
     font-style: italic;
 }
+.article p span.bold {
+    font-weight: bold;
+    font-style: normal;
+}
+.article img {
+    width: 30%;
+    margin-right: 50px;
+    margin-top: 50px;
+}
 .article-list {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-}
-.rev {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-.rev h2 {
-    text-align: end;
-    margin-right: 50px;
-}
-.rev p {
-    width: 100%;
-    text-align: end;
 }
 .article-list h1 {
     font-weight: bold;
@@ -72,6 +69,47 @@
     position: relative;
     bottom: 40px;
     width: 70%;
+}
+.rev {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.rev h2 {
+    text-align: end;
+    margin-right: 50px;
+}
+.rev p {
+    width: 100%;
+    text-align: end;
+}
+.article-list-book {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.article-list-book-heading {
+    width: 60%;
+}
+.article-list-book h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: #F2386E;
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+}
+.article-list-book h3 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    color: #492996;
+    position: relative;
+    bottom: 20px;
 }
 .quote {
     position: relative;
