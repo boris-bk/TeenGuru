@@ -30,6 +30,9 @@
 .nav-hidden {
     display: none !important;
 }
+.nav-show {
+    display: block !important;
+}
 .menu-icon-wrapper-nav-show {
     display: none;
     width: 30px;
@@ -101,8 +104,6 @@ a.li-active {
 .slide-page-wrap-100 {
     width: 100%;
     margin: 70px 10% 0 10%;
-    padding-left: 100px;
-    padding-right: 100px;
     position: unset;
 }
 .slide-page-45 {
@@ -279,6 +280,9 @@ a.slide-next svg path:active {
     .slide-page-wrap {
         right: 20px;
     }
+    .content-page-nav {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 1100px) {
     .content-page-nav {
@@ -298,16 +302,11 @@ a.slide-next svg path:active {
     .slide-page-full-screen {
         top: auto;
     }
-}
-@media only screen and (max-width: 800px) {
-    .slide-page-wrap a.slide-next {
-        right: -8%;
-    }
-    .slide-page-wrap a.slide-back {
-        left: -8%;
+    .article {
+        margin-top: 70px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
     .content-page {
         flex-wrap: wrap;
     }
@@ -347,7 +346,14 @@ a.slide-next svg path:active {
     .content-btns {
         justify-content: center;
     }
-
+}
+@media only screen and (max-width: 800px) {
+    .slide-page-wrap a.slide-next {
+        right: -8%;
+    }
+    .slide-page-wrap a.slide-back {
+        left: -8%;
+    }
 }
 @media only screen and (max-width: 500px) {
     .content-btns {
